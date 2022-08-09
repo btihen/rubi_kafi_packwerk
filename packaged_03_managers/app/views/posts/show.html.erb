@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @post %>
+
+<div>
+  <%= link_to "Edit this post", edit_profile_post_path(@profile, @post) %> |
+  <%= link_to "Back to post", profile_posts_path(@profile) %>
+
+  <%= button_to "Destroy this post", profile_post_path(@profile, @post), method: :delete %>
+</div>

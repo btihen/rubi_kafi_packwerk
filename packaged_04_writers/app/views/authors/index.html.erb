@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Author</h1>
+
+<div id="authors">
+  <% @authors.each do |author| %>
+    <%= render author %>
+    <p>
+      <%= link_to "Show this author", author_path(author) %>
+    </p>
+  <% end %>
+</div>

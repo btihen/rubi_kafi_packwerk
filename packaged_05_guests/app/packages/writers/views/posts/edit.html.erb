@@ -1,0 +1,10 @@
+<h1>Editing post</h1>
+
+<%= render "form", post: @post %>
+
+<br>
+
+<div>
+  <%= link_to "Show this post", profile_post_path(@profile, @post) %> |
+  <%= link_to "Back to post", profile_posts_path(@profile) %>
+</div>
